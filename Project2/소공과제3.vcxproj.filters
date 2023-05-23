@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\채용 등록">
+      <UniqueIdentifier>{7b1846b2-b3cf-4623-8b64-f10dadf0a8f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\등록한 채용조회">
+      <UniqueIdentifier>{8b91ee28-e05e-4fb1-977f-4ce913e08dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\통계 %28회사%29">
+      <UniqueIdentifier>{082ea63b-6d10-4e9e-8b01-85c90ecc6d1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Entity">
+      <UniqueIdentifier>{27da69a2-cdbf-45e5-addd-d2c32b5ee466}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CompanyMember.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Recruit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AddRecruitUI.cpp">
+      <Filter>소스 파일\채용 등록</Filter>
+    </ClCompile>
+    <ClCompile Include="AddRecruit.cpp">
+      <Filter>소스 파일\채용 등록</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowRecruitListUI.cpp">
+      <Filter>소스 파일\등록한 채용조회</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowRecruitList.cpp">
+      <Filter>소스 파일\등록한 채용조회</Filter>
+    </ClCompile>
+    <ClCompile Include="GetApplyCount.cpp">
+      <Filter>소스 파일\통계 %28회사%29</Filter>
+    </ClCompile>
+    <ClCompile Include="GetApplyCountUI.cpp">
+      <Filter>소스 파일\통계 %28회사%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\회원관리\Member.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddRecruitUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AddRecruit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CompanyMember.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Recruit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowRecruitListUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowRecruitList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GetApplyCountUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GetApplyCount.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\회원관리\Member.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

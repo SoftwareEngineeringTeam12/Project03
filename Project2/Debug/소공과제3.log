@@ -1,0 +1,19 @@
+﻿  Member.cpp
+  AddRecruit.cpp
+C:\Users\qhdtj\Desktop\수정시도\소공과제3\CompanyMember.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'Member.h': No such file or directory
+  AddRecruitUI.cpp
+C:\Users\qhdtj\Desktop\수정시도\소공과제3\CompanyMember.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'Member.h': No such file or directory
+  CompanyMember.cpp
+C:\Users\qhdtj\Desktop\수정시도\소공과제3\CompanyMember.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'Member.h': No such file or directory
+  GetApplyCount.cpp
+C:\Users\qhdtj\Desktop\수정시도\소공과제3\CompanyMember.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'Member.h': No such file or directory
+  GetApplyCountUI.cpp
+C:\Users\qhdtj\Desktop\수정시도\소공과제3\CompanyMember.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'Member.h': No such file or directory
+  main.cpp
+C:\Users\qhdtj\Desktop\수정시도\소공과제3\CompanyMember.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'Member.h': No such file or directory
+  Recruit.cpp
+  ShowRecruitList.cpp
+C:\Users\qhdtj\Desktop\수정시도\소공과제3\CompanyMember.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'Member.h': No such file or directory
+  ShowRecruitListUI.cpp
+C:\Users\qhdtj\Desktop\수정시도\소공과제3\CompanyMember.h(5,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'Member.h': No such file or directory
+  코드를 생성하고 있습니다...
