@@ -8,10 +8,8 @@ using namespace std;
 class GetApplyCount
 {
 private:
-	CompanyMember* companyMember;
-
 public:
 	GetApplyCount(); //생성자 
-	string getRecruitCount();
+	string getRecruitCount(Member* loginedMember);
 	~GetApplyCount(); //소멸자 (생성자 클래스와 이름 같음)
 };

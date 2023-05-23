@@ -9,11 +9,11 @@ Recruit::Recruit(string job, string numberOfApplicants, string deadline) {
 }
 
 string Recruit::getRecruit() {
-	return Job + to_string(NumberOfApplicants) + " " + Deadline;
+	return Job + " " + to_string(NumberOfApplicants) + " " + Deadline;
 }
 
 string Recruit::getApplyCount() {
-	return Job + to_string(ApplyCount);
+	return Job + " " + to_string(ApplyCount);
 }
 
 Recruit::~Recruit(){}

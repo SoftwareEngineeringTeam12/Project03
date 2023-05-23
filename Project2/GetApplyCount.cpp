@@ -3,7 +3,9 @@ using namespace std;
 
 GetApplyCount::GetApplyCount(){}
 
-string GetApplyCount::getRecruitCount(){
+string GetApplyCount::getRecruitCount(Member* loginedMember){
+
+	CompanyMember* companyMember = (CompanyMember*)loginedMember;
 	return companyMember->getApplyRecruit();
 }
 GetApplyCount::~GetApplyCount(){}

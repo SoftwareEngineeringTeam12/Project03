@@ -2,7 +2,9 @@
 
 ShowRecruitList::ShowRecruitList() {} // »ı¼ºÀÚ
 
-string ShowRecruitList::ShowRecruit() {
+string ShowRecruitList::ShowRecruit(Member* loginedMember) {
+
+	CompanyMember* companyMember = (CompanyMember*)loginedMember;
 	return companyMember->listRecruit();
 }
 
