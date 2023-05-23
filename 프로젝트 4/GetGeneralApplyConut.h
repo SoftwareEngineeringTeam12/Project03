@@ -3,7 +3,8 @@
 using namespace std;
 class GetGeneralApplyCount
 {
+	GeneralMember member;
 	void getApplyCount();
 public:
-	void run();
+	void run(*GeneralMember Mem);
 };

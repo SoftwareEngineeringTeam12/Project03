@@ -4,8 +4,8 @@ using namespace std;
 
 class selectApplyToCancel
 {
-	string number;
-	void cancelFinishedApply();
+	GeneralMember member;
+	string cancelFinishedApply(string del);
 public:
-	void run();
+	string run(*GeneralMember Mem, string del);
 };

@@ -1,13 +1,12 @@
 #include "selectApplyToCancel.h"
 
-void selectApplyToCancel::run()
+string selectApplyToCancel::run(*GeneralMember Mem, string del)
 {
-	cancelFinishedApply();
+	member = Mem;
+	return cancelFinishedApply(*GeneralMember Mem, string del);
 }
 
-void cancelFinishedApply()
+string cancelFinishedApply(string del)
 {
-	string temp;
-	cin >> temp;
-	GeneralMember::deleteApply(temp);
+	return member.deleteApply(del);
 }

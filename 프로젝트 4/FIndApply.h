@@ -8,7 +8,8 @@ using namespace std;
 
 class FindApply
 {
-	void showMyApplys();//내가 지원한 정보를 출력해줘
+	GeneralMember member;
+	string showMyApplys();//내가 지원한 정보를 출력해줘
 public:
-	void run();
+	string run(*GeneralMember Mem);
 };
