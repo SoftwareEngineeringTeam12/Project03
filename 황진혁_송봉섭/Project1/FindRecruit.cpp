@@ -1,22 +1,24 @@
+#pragma once
+#include "CompanyMember.h"
 #include <iostream>
 #include <string>
 #include "FindRecruit.h"
-#include "CompanyMember.h"
-CompanyMember companyMember;
 
-string FindRecruit::showRecruitByCName(char* CName, CompanyMember** Cmembers, int nextCMember) {
 
-	string str = "";
+string FindRecruit::showRecruitByCName(char* CName, CompanyMember* Cmembers[], int nextCMember) {
+
+	string str(CName);
+	string result = "";
 
 	for (int i = 0; i < nextCMember; i++)
 	{
-		if (&Cmembers[i]->getMyRecruitCName() == (string*)CName) {
+		if (Cmembers[i]->getMyRecruitCName() == str) {
 
-			str += Cmembers[i]->getMyRecruitDetails() + "\n";
+			result += Cmembers[i]->getMyRecruitDetails() + "\n";
 		}
 
 	}
 
-	return str;
+	return result;
 
 }

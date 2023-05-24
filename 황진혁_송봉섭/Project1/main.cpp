@@ -9,7 +9,6 @@
 #include "LogoutUI.h"
 #include "GetApplyCountUI.h"
 #include "FindRecruitUI.h"
-
 #include "AddRecruitUI.h"
 #include "ShowRecruitListUI.h"
 #define _CRT_SECURE_NO_WARNINGS 
@@ -158,6 +157,7 @@ void doTask(FILE* in_fp, FILE* out_fp)
             { 
                 FindRecruitUI findRecruitUI;
                 findRecruitUI.searchByCName(in_fp, out_fp, findRecruit, Cmembers, nextCMember);
+                //cout << "여기" << endl;
 
                 break;
             }
@@ -177,6 +177,7 @@ void doTask(FILE* in_fp, FILE* out_fp)
                 break;
             }
             }
+            continue;
         }
         case 5://지원 정보 통계 *****************************************
         {

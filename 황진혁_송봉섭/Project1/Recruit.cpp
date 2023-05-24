@@ -5,10 +5,10 @@ using namespace std;
 
 Recruit::Recruit(string cname,string job, string numberOfApplicants, string deadline) {
 	
-	CName = cname;
-	Job = job;
-	Deadline = deadline;
-	NumberOfApplicants = stoi(numberOfApplicants);
+	this->CName = cname;
+	this->Job = job;
+	this->Deadline = deadline;
+	this->NumberOfApplicants = stoi(numberOfApplicants);
 }
 
 string Recruit::getRecruit() {
