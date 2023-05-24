@@ -10,6 +10,10 @@ string Member::getID() {
 string Member::getPW() {
 	return this->PW;
 }
+int Member::getUsertype() {
+	return this->User_type;
+}
+
 /*
 	함수 이름 : Member::loginMember()
 	기능	  : 로그인 하기,매개변수로 들어온 아이디 비번이 같으면 true

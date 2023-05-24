@@ -75,7 +75,7 @@ void doTask(FILE* in_fp, FILE* out_fp)
         
         // 입력파일에서 메뉴 숫자 2개를 읽기
         fscanf(in_fp, "%d %d ", &menu_level_1, &menu_level_2);
-        cout << menu_level_1 << " " << menu_level_2 << endl;
+        //cout << menu_level_1 << " " << menu_level_2 << endl;
         // 메뉴 구분 및 해당 연산 수행
         switch (menu_level_1)
         {
@@ -85,7 +85,7 @@ void doTask(FILE* in_fp, FILE* out_fp)
             {
             case 1:   // "1.1. 회원가입“ 메뉴 부분
             {
-                // UI 생성
+                // UI 생성 
                 SignUpUI signupUI;
                 // UI를 통해서 usertype 받기
                 int user_type = signupUI.selectKindOfMember(in_fp, signUp);
@@ -185,9 +185,16 @@ void doTask(FILE* in_fp, FILE* out_fp)
             {
             case 1:
             {
-                //(회사회원)이 지원 정보 통계
-                GetApplyCountUI getApplyCountUI;
-                getApplyCountUI.getStatisticsRecruitNum(out_fp, getApplyCount, loginedMember);
+                if (loginedMember->getUsertype() == 1) {
+
+                    //(회사회원)이 지원 정보 통계
+                    GetApplyCountUI getApplyCountUI;
+                    getApplyCountUI.getStatisticsRecruitNum(out_fp, getApplyCount, loginedMember);
+                    cout << "회사 회원 통계" << endl;
+                }
+                else {
+                    cout << "일반회원 통계" << endl;
+                }
 
                 break;
             }

@@ -15,7 +15,7 @@ private:
 public:
 	// »ý¼ºÀÚ
 	CompanyMember(string _ID, string _PW, string _CName, string _BusinessNumber)
-		: Member(_ID, _PW), CName(_CName), BusinessNumber(_BusinessNumber)
+		: Member(_ID, _PW, 1), CName(_CName), BusinessNumber(_BusinessNumber)
 	{}
 
 	void createRecruit(string Job, string NumberOfApplicants, string Deadline);

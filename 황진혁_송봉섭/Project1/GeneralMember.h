@@ -10,7 +10,7 @@ private:
 public:
 	// »ı¼ºÀÚ
 	GeneralMember(string _ID, string _PW, string _GName, string _RegisterNumber)
-		: Member(_ID, _PW), GName(_GName), RegisterNumber(_RegisterNumber)
+		: Member(_ID, _PW, 2), GName(_GName), RegisterNumber(_RegisterNumber)
 	{}
 
 };
