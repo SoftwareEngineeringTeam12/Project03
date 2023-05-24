@@ -2,10 +2,10 @@
 using namespace std;
 #include <iostream>
 
-Recruit::Recruit(string cname,string job, string numberOfApplicants, string deadline) {
-	CName = cname;
-	Job = job;
 
+Recruit::Recruit(string cname,string job, string numberOfApplicants, string deadline) {
+	
+	CName = cname;
 	Job = job;
 	Deadline = deadline;
 	NumberOfApplicants = stoi(numberOfApplicants);
