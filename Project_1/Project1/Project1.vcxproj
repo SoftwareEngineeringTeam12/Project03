@@ -127,8 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CancelApply.h" />
+    <ClInclude Include="CancelApplyUI.h" />
     <ClInclude Include="CompanyMember.h" />
+    <ClInclude Include="FindApply.h" />
+    <ClInclude Include="FindApplyUI.h" />
     <ClInclude Include="GeneralMember.h" />
+    <ClInclude Include="GetGeneralApplyCount.h" />
+    <ClInclude Include="GetGeneralApplyCountUI.h" />
     <ClInclude Include="Login.h" />
     <ClInclude Include="LoginUI.h" />
     <ClInclude Include="Logout.h" />
@@ -140,8 +146,14 @@
     <ClInclude Include="WithdrawUI.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CancelApply.cpp" />
+    <ClCompile Include="CancelApplyUI.cpp" />
     <ClCompile Include="CompanyMember.cpp" />
+    <ClCompile Include="FindApply.cpp" />
+    <ClCompile Include="FindApplyUI.cpp" />
     <ClCompile Include="GeneralMember.cpp" />
+    <ClCompile Include="GetGeneralApplyCount.cpp" />
+    <ClCompile Include="GetGeneralApplyCountUI.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="LoginUI.cpp" />
     <ClCompile Include="Logout.cpp" />
