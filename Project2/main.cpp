@@ -1,9 +1,17 @@
 // 헤더 선언
-#include <stdio.h>
+#include <iostream>
 #include <string.h>
+#include <vector>
+#include <stdio.h>
+#include "Member.h" // 디폴트 include
+
+
 #include "AddRecruitUI.h"
 #include "ShowRecruitListUI.h"
-#include "CompanyMember.h"
+#include "GetApplyCountUI.h"
+
+#define _CRT_SECURE_NO_WARNINGS 
+#pragma warning(disable:4996)
 
 
 // 상수 선언
@@ -12,9 +20,8 @@
 #define OUTPUT_FILE_NAME "output.txt"
 
 // 함수 선언
-void doTask();
-void join();
-void program_exit();
+void doTask(FILE* in_fp, FILE* out_fp);
+void program_exit(FILE* out_fp);
 
 // 변수 선언
 FILE* in_fp, * out_fp;
@@ -25,31 +32,29 @@ int main()
     FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
     FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
 
-    doTask();
+    doTask(in_fp, out_fp);
 
     return 0;
 }
 
 
-void doTask()
+void doTask(FILE* in_fp, FILE* out_fp)
 {
     // 메뉴 파싱을 위한 level 구분을 위한 변수
     int menu_level_1 = 0, menu_level_2 = 0;
     int is_program_exit = 0;
-    AddRecruitUI addRecruitUI;
-    ShowRecruitListUI showRecruitListUI;
+    int nextCMember = 0;
+    int nextGMember = 0;
+    CompanyMember* Cmembers[100];
+    // GeneralMember* Gmembers[100]; 일반회원
+    Member* loginedMember = new Member();
 
-
-    CompanyMember* companyMembers[100];
-    int companyMember_index = 0;
+    AddRecruit addRecruit; // 컨트롤
+    ShowRecruitList showRecruitList; // 컨트롤
+    GetApplyCount getApplyCount; // 컨트롤
 
     
-    CompanyMember* logined_Member;
 
-    companyMembers[0] = new CompanyMember();
-
-
-    logined_Member = companyMembers[0];
 
 
 
@@ -68,8 +73,6 @@ void doTask()
             {
             case 1:   // "1.1. 회원가입“ 메뉴 부분
             {
-                // join() 함수에서 해당 기능 수행 
-                join();//어떤 stereotype? controll class를 만들어야함 usecase당 컨드롤 하나씩나오는거임
 
                 break;
             }
@@ -103,26 +106,23 @@ void doTask()
             {
             case 1://채용 정보 등록 *********************************************************
             {
-                char job[MAX_STRING], num_app[MAX_STRING], deadline[MAX_STRING];
+                // UI 생성
+                AddRecruitUI addRecruitUI;
 
-                // 입력 형식 : 이름, 주민번호, ID, Password를 파일로부터 읽음
-                fscanf(in_fp, "%s %s %s", job, num_app, deadline);
+                //CompanyMember* companyMember = loginedMember;
+               
 
-                addRecruitUI.createNewRecruit(job, num_app, deadline , logined_Member);
+                addRecruitUI.createNewRecruit(in_fp , out_fp, addRecruit , loginedMember);
 
-                // 출력 형식
-                fprintf(out_fp, "3.1. 채용 정보 등록\n");
-                fprintf(out_fp, "%s %s %s \n", job, num_app, deadline);
+                
 
                 break;
             }
             case 2: //등록된 채용정보 조회  *********************************************************
             {
-                string result_string = showRecruitListUI.showMyRecruits();
-                const char* c = result_string.c_str(); // 형변환 (string) -> (const char*)
-                // 출력 형식
-                fprintf(out_fp, "3.2. 등록된 채용 정보 조회\n");
-                fprintf(out_fp, c);
+                ShowRecruitListUI showRecruitListUI;
+                showRecruitListUI.showMyRecruits(out_fp , showRecruitList, loginedMember);
+               
                 break;
             }
             }
@@ -153,12 +153,15 @@ void doTask()
             }
             }
         }
-        case 5://지원 정보 통계
+        case 5://지원 정보 통계 *****************************************
         {
             switch (menu_level_2)
             {
             case 1:
             {
+                //(회사회원)이 지원 정보 통계
+                GetApplyCountUI getApplyCountUI;
+                getApplyCountUI.getStatisticsRecruitNum(out_fp, getApplyCount, loginedMember);
 
                 break;
             }
@@ -172,7 +175,7 @@ void doTask()
             case 1:   // "6.1. 종료“ 메뉴 부분
             {
 
-                program_exit();
+                program_exit(out_fp);
                 is_program_exit = 1;
                 break;
             }
@@ -187,10 +190,7 @@ void doTask()
 }
 
 
-
-
-
-void program_exit()
+void program_exit(FILE* out_fp)
 {
-
+    fprintf(out_fp, "6. 1. 종료\n");
 }

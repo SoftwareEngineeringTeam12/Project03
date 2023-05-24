@@ -2,13 +2,13 @@
 #include <string.h>
 #include<string>
 #include "AddRecruit.h"
+#define MAX_STRING 32
 using namespace std;
 
 
 class AddRecruitUI
 {
 private:
-	AddRecruit addrecruit;
 	
 public:
 	AddRecruitUI(); //생성자 
@@ -16,6 +16,6 @@ public:
 	void startInterface();
 	void registerRecruit(); // 필요없긴함
 
-	void createNewRecruit(string Job, string NumberOfApplicants, string Deadline, CompanyMember* companyMember);
+	void createNewRecruit(FILE* in_fp, FILE* out_fp, AddRecruit addRecruit, Member* loginedMember);
 	~AddRecruitUI(); //소멸자
 };

@@ -9,13 +9,11 @@ using namespace std;
 class ShowRecruitList
 {
 private:
-	CompanyMember* companyMember;
-
 
 public:
 	ShowRecruitList(); //持失切 
 
-	string ShowRecruit();
+	string ShowRecruit(Member* loginedMember);
 
 	~ShowRecruitList(); //社瑚切
 };

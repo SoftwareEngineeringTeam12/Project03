@@ -15,9 +15,7 @@ private:
 	int Recruit_index;
 
 public:
-	CompanyMember(string _ID, string _PW, string _CName, string _BusinessNumber)
-		: Member(_ID, _PW), CName(_CName), BusinessNumber(_BusinessNumber)
-	{}
+	CompanyMember(string _ID, string _PW, string _CName, string _BusinessNumber);
 
 	void createRecruit(string Job, string NumberOfApplicants, string Deadline);
 	string listRecruit();

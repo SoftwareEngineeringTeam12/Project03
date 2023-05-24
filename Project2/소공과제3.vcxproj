@@ -139,24 +139,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\회원관리\Member.cpp" />
     <ClCompile Include="AddRecruit.cpp" />
     <ClCompile Include="AddRecruitUI.cpp" />
     <ClCompile Include="CompanyMember.cpp" />
     <ClCompile Include="GetApplyCount.cpp" />
     <ClCompile Include="GetApplyCountUI.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Member.cpp" />
     <ClCompile Include="Recruit.cpp" />
     <ClCompile Include="ShowRecruitList.cpp" />
     <ClCompile Include="ShowRecruitListUI.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\회원관리\Member.h" />
     <ClInclude Include="AddRecruit.h" />
     <ClInclude Include="AddRecruitUI.h" />
     <ClInclude Include="CompanyMember.h" />
     <ClInclude Include="GetApplyCount.h" />
     <ClInclude Include="GetApplyCountUI.h" />
+    <ClInclude Include="Member.h" />
     <ClInclude Include="Recruit.h" />
     <ClInclude Include="ShowRecruitList.h" />
     <ClInclude Include="ShowRecruitListUI.h" />

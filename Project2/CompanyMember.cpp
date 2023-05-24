@@ -2,8 +2,10 @@
 using namespace std;
 
 
-CompanyMember::CompanyMember() {
-	Recruit_index = 0; // Ãß°¡µÊ
+CompanyMember::CompanyMember(string _ID, string _PW, string _CName, string _BusinessNumber)
+	: Member(_ID, _PW), CName(_CName), BusinessNumber(_BusinessNumber)
+{
+	Recruit_index = 0;
 }
 
 void CompanyMember::createRecruit(string Job, string NumberOfApplicants, string Deadline) {

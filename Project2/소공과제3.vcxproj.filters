@@ -30,12 +30,6 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CompanyMember.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Recruit.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="AddRecruitUI.cpp">
       <Filter>소스 파일\채용 등록</Filter>
     </ClCompile>
@@ -54,8 +48,14 @@
     <ClCompile Include="GetApplyCountUI.cpp">
       <Filter>소스 파일\통계 %28회사%29</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\회원관리\Member.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Member.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Recruit.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="CompanyMember.cpp">
+      <Filter>소스 파일\Entity</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -83,7 +83,7 @@
     <ClInclude Include="GetApplyCount.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\회원관리\Member.h">
+    <ClInclude Include="Member.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
