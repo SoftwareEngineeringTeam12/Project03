@@ -15,7 +15,7 @@ private:
 public:
 	// 생성자
 	CompanyMember(string _ID, string _PW, string _CName, string _BusinessNumber)
-		: Member(_ID, _PW, 1), CName(_CName), BusinessNumber(_BusinessNumber)
+		: Member(_ID, _PW), CName(_CName), BusinessNumber(_BusinessNumber)
 	{}
 
 	void createRecruit(string Job, string NumberOfApplicants, string Deadline);
@@ -27,8 +27,12 @@ public:
 
 	string getMyRecruitCName();
 
-
 	string getApplyRecruit();
+
+	Recruit* getMyRecruit();//리크루트 가져오기
+
+	string getBusinessNubmer();//채용지원
+	string getCName();//채용지원
 
 	~CompanyMember(); //소멸자
 };

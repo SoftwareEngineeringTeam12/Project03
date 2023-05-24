@@ -11,6 +11,7 @@
 #include "FindRecruitUI.h"
 #include "AddRecruitUI.h"
 #include "ShowRecruitListUI.h"
+#include"ApplyRecruitUI.h"
 #define _CRT_SECURE_NO_WARNINGS 
 #pragma warning(disable:4996)
 
@@ -63,7 +64,7 @@ void doTask(FILE* in_fp, FILE* out_fp)
     Logout logout;
 
     FindRecruit findRecruit;
-
+    ApplyRecruit applyRecruit;
     AddRecruit addRecruit; // 컨트롤
     ShowRecruitList showRecruitList; // 컨트롤
     GetApplyCount getApplyCount; // 컨트롤
@@ -163,7 +164,8 @@ void doTask(FILE* in_fp, FILE* out_fp)
             }
             case 2:
             {
-
+                ApplyRecruitUI applyRecruitUI;
+                applyRecruitUI.applyRecruit(in_fp, out_fp, applyRecruit, Cmembers, nextCMember, loginedMember);//in_fp business number
                 break;
             }
             case 3:

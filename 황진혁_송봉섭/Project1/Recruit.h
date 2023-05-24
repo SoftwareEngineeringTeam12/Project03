@@ -14,14 +14,16 @@ private:
 
 
 public:
-	Recruit(string cname,string job, string numberOfApplicants, string deadline); //持失切 
+	Recruit(string cname, string job, string numberOfApplicants, string deadline); //持失切 
 
 	string getRecruit();
 	string getApplyCount();
 
 	string getDetails();
 	string getCName();
-
+	string getJob();
+	string getDeadline();
+	int getNumberOfApplicants();
 
 	~Recruit(); //社瑚切
 };

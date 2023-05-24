@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClInclude Include="AddRecruit.h" />
     <ClInclude Include="AddRecruitUI.h" />
+    <ClInclude Include="Apply.h" />
+    <ClInclude Include="ApplyRecruit.h" />
+    <ClInclude Include="ApplyRecruitUI.h" />
     <ClInclude Include="CompanyMember.h" />
     <ClInclude Include="FindRecruit.h" />
     <ClInclude Include="FindRecruitUI.h" />
@@ -151,6 +154,9 @@
   <ItemGroup>
     <ClCompile Include="AddRecruit.cpp" />
     <ClCompile Include="AddRecruitUI.cpp" />
+    <ClCompile Include="Apply.cpp" />
+    <ClCompile Include="ApplyRecruit.cpp" />
+    <ClCompile Include="ApplyRecruitUI.cpp" />
     <ClCompile Include="CompanyMember.cpp" />
     <ClCompile Include="FindRecruit.cpp" />
     <ClCompile Include="FindRecruitUI.cpp" />

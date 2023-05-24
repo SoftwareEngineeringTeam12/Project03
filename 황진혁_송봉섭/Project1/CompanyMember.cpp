@@ -23,13 +23,24 @@ string CompanyMember::getMyRecruitDetails() {
 	return str;
 }
 
+string CompanyMember::getBusinessNubmer() {
+
+	return this->BusinessNumber;
+}
+string CompanyMember::getCName() {
+
+	return this->CName;
+}
 
 void CompanyMember::createRecruit(string Job, string NumberOfApplicants, string Deadline) {
-	
-	Recruit * newRecruit = new Recruit(this->CName, Job, NumberOfApplicants, Deadline);
+
+	Recruit* newRecruit = new Recruit(this->CName, Job, NumberOfApplicants, Deadline);
 	this->recruits[this->Recruit_index++] = newRecruit;
 }
 
+Recruit* CompanyMember::getMyRecruit() {
+	return this->recruits[(this->Recruit_index) - 1];
+}
 string CompanyMember::listRecruit() {
 
 	string str = "";
