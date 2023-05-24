@@ -1,8 +1,10 @@
 #include "Recruit.h"
 using namespace std;
 #include <iostream>
-Recruit::Recruit(string job, string numberOfApplicants, string deadline) {
-	
+
+Recruit::Recruit(string cname,string job, string numberOfApplicants, string deadline) {
+	CName = cname;
+	Job = job;
 
 	Job = job;
 	Deadline = deadline;
@@ -16,5 +18,15 @@ string Recruit::getRecruit() {
 string Recruit::getApplyCount() {
 	return Job + " " + to_string(ApplyCount);
 }
+string Recruit::getDetails() {
+	//[회사이름] [사업자번호] [업무] [인원 수] [신청마감일] }*
+	return Job + " " + to_string(NumberOfApplicants) + " " + Deadline;
+}
+
+string Recruit::getCName() {
+	return CName;
+}
+
+
 
 Recruit::~Recruit() {}

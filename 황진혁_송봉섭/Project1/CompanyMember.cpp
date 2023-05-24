@@ -2,7 +2,28 @@
 using namespace std;
 #include <iostream>
 
+CompanyMember::CompanyMember() {
+	string CName;
+}
 
+string CompanyMember::getMyRecruitCName() {
+	string str = "";
+
+	for (int i = 0; i < Recruit_index; i++)
+	{
+		str += recruits[i]->getCName();
+	}
+	return str;
+}
+
+string CompanyMember::getMyRecruitDetails() {
+	string str = "";
+	for (int i = 0; i < Recruit_index; i++)
+	{
+		str += CName + BusinessNumber + recruits[i]->getDetails();
+	}
+	return str;
+}
 
 
 void CompanyMember::createRecruit(string Job, string NumberOfApplicants, string Deadline) {

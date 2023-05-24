@@ -8,6 +8,7 @@
 #include "LoginUI.h"
 #include "LogoutUI.h"
 #include "GetApplyCountUI.h"
+#include "FindRecruitUI.h"
 
 #include "AddRecruitUI.h"
 #include "ShowRecruitListUI.h"
@@ -61,6 +62,8 @@ void doTask(FILE* in_fp, FILE* out_fp)
     Withdraw withdraw;
     Login login;
     Logout logout;
+
+    FindRecruit findRecruit;
 
     AddRecruit addRecruit; // 컨트롤
     ShowRecruitList showRecruitList; // 컨트롤
@@ -152,7 +155,9 @@ void doTask(FILE* in_fp, FILE* out_fp)
             switch (menu_level_2)
             {
             case 1:
-            {
+            { 
+                FindRecruitUI findRecruitUI;
+                findRecruitUI.searchByCName(in_fp, out_fp, findRecruit, Cmembers, nextCMember);
 
                 break;
             }

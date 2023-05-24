@@ -18,6 +18,9 @@ public:
 	string getRecruit();
 	string getApplyCount();
 
+	string getDetails();
+	string getCName();
+
 
 	~Recruit(); //¼Ò¸êÀÚ
 };

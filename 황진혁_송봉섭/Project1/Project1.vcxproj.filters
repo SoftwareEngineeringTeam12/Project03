@@ -69,6 +69,12 @@
     <ClInclude Include="GetApplyCountUI.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="FindRecruitUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FindRecruit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SignUpUI.cpp">
@@ -126,6 +132,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="GetApplyCountUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FindRecruitUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FindRecruit.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

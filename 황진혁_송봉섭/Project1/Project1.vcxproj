@@ -130,6 +130,8 @@
     <ClInclude Include="AddRecruit.h" />
     <ClInclude Include="AddRecruitUI.h" />
     <ClInclude Include="CompanyMember.h" />
+    <ClInclude Include="FindRecruit.h" />
+    <ClInclude Include="FindRecruitUI.h" />
     <ClInclude Include="GeneralMember.h" />
     <ClInclude Include="GetApplyCount.h" />
     <ClInclude Include="GetApplyCountUI.h" />
@@ -150,6 +152,8 @@
     <ClCompile Include="AddRecruit.cpp" />
     <ClCompile Include="AddRecruitUI.cpp" />
     <ClCompile Include="CompanyMember.cpp" />
+    <ClCompile Include="FindRecruit.cpp" />
+    <ClCompile Include="FindRecruitUI.cpp" />
     <ClCompile Include="GeneralMember.cpp" />
     <ClCompile Include="GetApplyCount.cpp" />
     <ClCompile Include="GetApplyCountUI.cpp" />
