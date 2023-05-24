@@ -127,12 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AddRecruit.h" />
+    <ClInclude Include="AddRecruitUI.h" />
     <ClInclude Include="CancelApply.h" />
     <ClInclude Include="CancelApplyUI.h" />
     <ClInclude Include="CompanyMember.h" />
     <ClInclude Include="FindApply.h" />
     <ClInclude Include="FindApplyUI.h" />
     <ClInclude Include="GeneralMember.h" />
+    <ClInclude Include="GetApplyCount.h" />
+    <ClInclude Include="GetApplyCountUI.h" />
     <ClInclude Include="GetGeneralApplyCount.h" />
     <ClInclude Include="GetGeneralApplyCountUI.h" />
     <ClInclude Include="Login.h" />
@@ -140,18 +144,25 @@
     <ClInclude Include="Logout.h" />
     <ClInclude Include="LogoutUI.h" />
     <ClInclude Include="Member.h" />
+    <ClInclude Include="Recruit.h" />
+    <ClInclude Include="ShowRecruitList.h" />
+    <ClInclude Include="ShowRecruitListUI.h" />
     <ClInclude Include="SignUp.h" />
     <ClInclude Include="SignUpUI.h" />
     <ClInclude Include="Withdraw.h" />
     <ClInclude Include="WithdrawUI.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AddRecruit.cpp" />
+    <ClCompile Include="AddRecruitUI.cpp" />
     <ClCompile Include="CancelApply.cpp" />
     <ClCompile Include="CancelApplyUI.cpp" />
     <ClCompile Include="CompanyMember.cpp" />
     <ClCompile Include="FindApply.cpp" />
     <ClCompile Include="FindApplyUI.cpp" />
     <ClCompile Include="GeneralMember.cpp" />
+    <ClCompile Include="GetApplyCount.cpp" />
+    <ClCompile Include="GetApplyCountUI.cpp" />
     <ClCompile Include="GetGeneralApplyCount.cpp" />
     <ClCompile Include="GetGeneralApplyCountUI.cpp" />
     <ClCompile Include="Login.cpp" />
@@ -160,6 +171,9 @@
     <ClCompile Include="LogoutUI.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Member.cpp" />
+    <ClCompile Include="Recruit.cpp" />
+    <ClCompile Include="ShowRecruitList.cpp" />
+    <ClCompile Include="ShowRecruitListUI.cpp" />
     <ClCompile Include="SignUp.cpp" />
     <ClCompile Include="SignUpUI.cpp" />
     <ClCompile Include="Withdraw.cpp" />

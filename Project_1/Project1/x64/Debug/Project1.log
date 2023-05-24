@@ -1,14 +1,27 @@
-﻿  CompanyMember.cpp
-  GeneralMember.cpp
-  Login.cpp
-  LoginUI.cpp
-  Logout.cpp
-  LogoutUI.cpp
-  main.cpp
-  Member.cpp
-  SignUp.cpp
+﻿  CancelApply.cpp
+C:\submitgit\Project03\Project_1\Project1\CancelApply.cpp(5,13): error C2228: '.deleteApply' 왼쪽에는 클래스/구조체/공용 구조체가 있어야 합니다.
+C:\submitgit\Project03\Project_1\Project1\CancelApply.cpp(5,13): message : 'GeneralMember *' 형식입니다.
+C:\submitgit\Project03\Project_1\Project1\CancelApply.cpp(5,13): message : 대신 '->'을(를) 사용하려고 했습니까?
+  CancelApplyUI.cpp
+C:\submitgit\Project03\Project_1\Project1\CancelApplyUI.cpp(6,16): warning C4477: 'fscanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'std::string'입니다.
+C:\submitgit\Project03\Project_1\Project1\CancelApplyUI.cpp(6,2): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  CompanyMember.cpp
+C:\submitgit\Project03\Project_1\Project1\CompanyMember.cpp(5,16): error C2084: 'CompanyMember::CompanyMember(std::string,std::string,std::string,std::string)' 함수에 이미 본문이 있습니다.
+C:\submitgit\Project03\Project_1\Project1\CompanyMember.h(17,2): message : '{ctor}'의 이전 정의를 참조하십시오.
+  FindApply.cpp
+C:\submitgit\Project03\Project_1\Project1\FindApply.cpp(7,13): error C2228: '.listApplys' 왼쪽에는 클래스/구조체/공용 구조체가 있어야 합니다.
+C:\submitgit\Project03\Project_1\Project1\FindApply.cpp(7,13): message : 'GeneralMember *' 형식입니다.
+C:\submitgit\Project03\Project_1\Project1\FindApply.cpp(7,13): message : 대신 '->'을(를) 사용하려고 했습니까?
+  FindApplyUI.cpp
+C:\submitgit\Project03\Project_1\Project1\FindApplyUI.cpp(6,27): error C2664: 'std::string FindApply::showMyApplys(GeneralMember *)': 인수 1을(를) 'GeneralMember **'에서 'GeneralMember *'(으)로 변환할 수 없습니다.
+C:\submitgit\Project03\Project_1\Project1\FindApplyUI.cpp(6,41): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\submitgit\Project03\Project_1\Project1\FIndApply.h(10,9): message : 'FindApply::showMyApplys' 선언을 참조하십시오.
+C:\submitgit\Project03\Project_1\Project1\FindApplyUI.cpp(6,27): message : 인수 목록 '(GeneralMember **)'을(를) 일치시키는 동안
+  GetApplyCount.cpp
+  GetGeneralApplyCount.cpp
+C:\submitgit\Project03\Project_1\Project1\GetGeneralApplyCount.cpp(5,13): error C2228: '.getApplyNum' 왼쪽에는 클래스/구조체/공용 구조체가 있어야 합니다.
+C:\submitgit\Project03\Project_1\Project1\GetGeneralApplyCount.cpp(5,13): message : 'GeneralMember *' 형식입니다.
+C:\submitgit\Project03\Project_1\Project1\GetGeneralApplyCount.cpp(5,13): message : 대신 '->'을(를) 사용하려고 했습니까?
+  GetGeneralApplyCountUI.cpp
   SignUpUI.cpp
-  Withdraw.cpp
-  WithdrawUI.cpp
   코드를 생성하고 있습니다...
-  Project1.vcxproj -> C:\submitgit\Project03\Project_1\x64\Debug\Project1.exe

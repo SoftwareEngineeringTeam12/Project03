@@ -7,7 +7,10 @@
 #include "WithdrawUI.h"
 #include "LoginUI.h"
 #include "LogoutUI.h"
+#include "GetApplyCountUI.h"
 
+#include "AddRecruitUI.h"
+#include "ShowRecruitListUI.h"
 #define _CRT_SECURE_NO_WARNINGS 
 #pragma warning(disable:4996)
 
@@ -58,6 +61,11 @@ void doTask(FILE* in_fp, FILE* out_fp)
     Withdraw withdraw;
     Login login;
     Logout logout;
+
+    AddRecruit addRecruit; // 컨트롤
+    ShowRecruitList showRecruitList; // 컨트롤
+    GetApplyCount getApplyCount; // 컨트롤
+
 
     while (!is_program_exit)
         //for(int i =0; i<6; i++)
@@ -114,21 +122,30 @@ void doTask(FILE* in_fp, FILE* out_fp)
             }
             continue;
         }
-        case 3://채용 정보 등록,등록된 채용정보 조회
+        switch (menu_level_2)
         {
-            switch (menu_level_2)
+            case 1://채용 정보 등록 *********************************************************
             {
-            case 1:
-            {
+                // UI 생성
+                AddRecruitUI addRecruitUI;
+
+                //CompanyMember* companyMember = loginedMember;
+
+
+                addRecruitUI.createNewRecruit(in_fp, out_fp, addRecruit, loginedMember);
+
+
 
                 break;
             }
-            case 2:
+            case 2: //등록된 채용정보 조회  *********************************************************
             {
+                ShowRecruitListUI showRecruitListUI;
+                showRecruitListUI.showMyRecruits(out_fp, showRecruitList, loginedMember);
 
                 break;
             }
-            }
+            
         }
         case 4://채용 정보 검색,채용 정보 지원,지원 정보 조회,지원 정보 취소
         {
