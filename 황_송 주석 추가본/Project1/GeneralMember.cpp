@@ -4,16 +4,19 @@
 #include <vector>
 #include <algorithm>
 
+/*
+	함수 이름 :  GeneralMember::AddNewAppply
+	기능	  : 지원 정보 등록
+	전달 인자 : 회사명, 사업자번호, 업무, 지원자 수, 마감일
+	반환값    :
+*/
+
+
 void GeneralMember::AddNewAppply(string cname, string businessNumber, string job, int numberOfApplicants, string deadline) {
 	Apply* newApply = new Apply(cname, businessNumber, job, deadline, numberOfApplicants);
 	this->OwnApply[this->OwnApplyNum++] = newApply;
 
 }
-
-
-
-
-
 
 
 string GeneralMember::listApply()

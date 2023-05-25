@@ -3,35 +3,6 @@ using namespace std;
 #include <iostream>
 
 
-
-string CompanyMember::getMyRecruitCName() {
-	string str = "";
-
-	for (int i = 0; i < Recruit_index; i++)
-	{
-		str += recruits[i]->getCName();
-	}
-	return str;
-}
-
-string CompanyMember::getMyRecruitDetails() {
-	string str = "";
-	for (int i = 0; i < Recruit_index; i++)
-	{
-		str += CName + " " + BusinessNumber + " " + recruits[i]->getDetails();
-	}
-	return str;
-}
-
-string CompanyMember::getBusinessNubmer() {
-
-	return this->BusinessNumber;
-}
-string CompanyMember::getCName() {
-
-	return this->CName;
-}
-
 /*
 	함수 이름 : CompanyMember::createRecruit()
 	기능	  : 채용 정보 등록
@@ -80,6 +51,43 @@ string CompanyMember::getApplyRecruit() {
 	return str;
 
 }
+/*
+	함수 이름 : CompanyMember::getMyRecruitCName() 
+	기능	  : 회사명과 일치하는 채용정보 확인
+	전달 인자 :
+	반환값    : 해당 채용정보 회사명 반환
+*/
+
+string CompanyMember::getMyRecruitCName() {
+	string str = "";
+
+	for (int i = 0; i < Recruit_index; i++)
+	{
+		str += recruits[i]->getCName();
+	}
+	return str;
+}
+
+string CompanyMember::getMyRecruitDetails() {
+	string str = "";
+	for (int i = 0; i < Recruit_index; i++)
+	{
+		str += CName + " " + BusinessNumber + " " + recruits[i]->getDetails();
+	}
+	return str;
+}
+
+//get함수
+
+string CompanyMember::getBusinessNubmer() {
+
+	return this->BusinessNumber;
+}
+string CompanyMember::getCName() {
+
+	return this->CName;
+}
+
 
 CompanyMember::~CompanyMember() {
 

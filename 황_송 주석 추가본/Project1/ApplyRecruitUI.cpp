@@ -11,6 +11,12 @@ using namespace std;
 
 void ApplyRecruitUI::startInterface(FILE* in_fp, ApplyRecruit* applyRecruit) {// 인터페이스 시작
 }
+/*
+	함수 이름 : ApplyRecruitUI::applyRecruit()
+	기능	  : 채용 지원
+	전달 인자 : FILE* in_fp,FILE* out_fp, ApplyRecruit 컨트롤 객체 , 회사회원의 더블포인터, 회사회원의 회원수,로그인된 멤버 포인터
+	반환값    :  
+*/
 
 void ApplyRecruitUI::applyRecruit(FILE* in_fp, FILE* out_fp, ApplyRecruit applyRecruit, CompanyMember** Cmembers, int nextCMember, Member* loginedMember) {
 

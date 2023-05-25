@@ -11,6 +11,12 @@ using namespace std;
 
 void FindRecruitUI::startInterface(FILE* in_fp, FindRecruit findRecruit) {// 인터페이스 시작
 }
+/*
+	함수 이름 : FindRecruitUI::searchByCName()
+	기능	  : 채용 정보 검색
+	전달 인자 : FILE* in_fp,FILE* out_fp, FindRecruit 컨트롤 객체 , 회사회원의 더블포인터, 회사회원의 회원수
+	반환값    :
+*/
 
 void FindRecruitUI::searchByCName(FILE* in_fp, FILE* out_fp, FindRecruit findRecruit, CompanyMember** Cmembers, int nextCMember) {
 

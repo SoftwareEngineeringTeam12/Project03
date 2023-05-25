@@ -10,6 +10,8 @@ Apply::Apply(string _Cname, string _BusinessNumber, string _Job, string _Deadlin
 	this->Job = _Job;
 }
 
+
+//get ÇÔ¼ö
 string Apply::getApplyCname()
 {
 	return this->Cname;

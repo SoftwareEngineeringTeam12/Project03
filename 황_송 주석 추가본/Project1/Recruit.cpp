@@ -29,11 +29,18 @@ string Recruit::getRecruit() {
 string Recruit::getApplyCount() {
 	return Job + " " + to_string(ApplyCount);
 }
-
+/*
+	함수 이름 : Recruit::getDetails()
+	기능	  : 채용 정보 검색
+	전달 인자 :
+	반환값    : 업무 , 모집인원수 , 마감일을 한 string으로 반환
+*/
 string Recruit::getDetails() {
 	//[회사이름] [사업자번호] [업무] [인원 수] [신청마감일] }*
 	return Job + " " + to_string(NumberOfApplicants) + " " + Deadline;
 }
+
+//get 함수
 string Recruit::getJob() {
 	return Job;
 }
