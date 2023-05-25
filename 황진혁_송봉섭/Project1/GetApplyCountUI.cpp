@@ -16,6 +16,7 @@ void GetApplyCountUI::getStatisticsRecruitNum(FILE* out_fp, GetApplyCount getApp
     // 출력 형식
     fprintf(out_fp, "5.1. 지원 정보 통계\n");
     fprintf(out_fp, c);
+
 }
 
 
