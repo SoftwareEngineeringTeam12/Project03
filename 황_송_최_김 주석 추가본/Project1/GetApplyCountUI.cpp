@@ -2,7 +2,12 @@
 using namespace std;
 
 GetApplyCountUI::GetApplyCountUI() {}
-
+/*
+    함수 이름 : GetApplyCountUI::startInterface()
+    기능	  : 메뉴 출력용 함수, 출력 안함
+    전달 인자 :
+    반환값    :
+*/
 void GetApplyCountUI::startInterface() {
 
 }

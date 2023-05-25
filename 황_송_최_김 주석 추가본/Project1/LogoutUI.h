@@ -9,6 +9,8 @@ using namespace std;
 class LogoutUI
 {
 public:
+	void startInterface(); // 출력 안함
+
 	// 로그아웃 기능
 	void selectLogout(FILE* out_fp, Member* LoginedMember, Logout logout);
 

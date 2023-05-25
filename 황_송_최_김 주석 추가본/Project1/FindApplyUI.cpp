@@ -1,6 +1,14 @@
 #include "FindApplyUI.h"
 #include "GeneralMember.h"
+/*
+	함수 이름 : FindApplyUI::startInterface()
+	기능	  : 메뉴 출력용 함수, 출력 안함
+	전달 인자 :
+	반환값    :
+*/
+void FindApplyUI::startInterface() {
 
+}
 
 /*
 함수 이름 : FindApplyUI::findMyApply()

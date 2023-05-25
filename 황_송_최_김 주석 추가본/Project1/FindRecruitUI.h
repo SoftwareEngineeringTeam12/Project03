@@ -8,7 +8,7 @@
 class FindRecruitUI
 {
 public:
-	void startInterface(FILE* in_fp, FindRecruit findRecruit);
+	void startInterface();
 	void searchByCName(FILE* in_fp, FILE* out_fp, FindRecruit findRecruit, CompanyMember** Cmembers, int nextCMember);
 };
 

@@ -100,9 +100,8 @@ void doTask(FILE* in_fp, FILE* out_fp)
             {
                 // UI 생성 
                 SignUpUI signupUI; 
-                //signupUI.startInterface();
-                //signUp.mysignUpUI.startInterface();
-                //SignUpUI * signupUI = signUp.mysignUpUI.startInterface();
+                signupUI.startInterface();
+                
                 // UI를 통해서 usertype 받기
                 int user_type = signupUI.selectKindOfMember(in_fp, signUp);
 
@@ -113,6 +112,7 @@ void doTask(FILE* in_fp, FILE* out_fp)
             case 2://회원탈퇴
             {
                 WithdrawUI withdrawUI;
+                withdrawUI.startInterface();
                 withdrawUI.withdrawMember(out_fp, loginedMember, withdraw);
                 break;
             }
@@ -127,6 +127,7 @@ void doTask(FILE* in_fp, FILE* out_fp)
             case 1:
             {
                 LoginUI loginUI;
+                loginUI.startInterface();
                 loginedMember = loginUI.selectLogin(in_fp, out_fp, login, Cmembers, &nextCMember, Gmembers, &nextGMember);
 
                 break;
@@ -134,6 +135,8 @@ void doTask(FILE* in_fp, FILE* out_fp)
             case 2:
             {
                 LogoutUI logoutUI;
+                logoutUI.startInterface();
+
                 logoutUI.selectLogout(out_fp, loginedMember, logout);
                 break;
             }
@@ -147,6 +150,8 @@ void doTask(FILE* in_fp, FILE* out_fp)
             {
                 // UI 생성
                 AddRecruitUI addRecruitUI;
+                addRecruitUI.startInterface();
+
                 addRecruitUI.createNewRecruit(in_fp, out_fp, addRecruit, loginedMember);
 
                 break;
@@ -154,6 +159,8 @@ void doTask(FILE* in_fp, FILE* out_fp)
             case 2: // 3 2 등록된 채용정보 조회
             {
                 ShowRecruitListUI showRecruitListUI;
+                showRecruitListUI.startInterface();
+
                 showRecruitListUI.showMyRecruits(out_fp, showRecruitList, loginedMember);
 
                 break;
@@ -168,6 +175,8 @@ void doTask(FILE* in_fp, FILE* out_fp)
             case 1:
             { 
                 FindRecruitUI findRecruitUI;
+                findRecruitUI.startInterface();
+
                 findRecruitUI.searchByCName(in_fp, out_fp, findRecruit, Cmembers, nextCMember);
 
                 break;
@@ -175,6 +184,8 @@ void doTask(FILE* in_fp, FILE* out_fp)
             case 2:
             {
                 ApplyRecruitUI applyRecruitUI;
+                applyRecruitUI.startInterface();
+
                 applyRecruitUI.applyRecruit(in_fp, out_fp, applyRecruit, Cmembers, nextCMember, loginedMember);//in_fp business number
                 GeneralMember* generalMember = (GeneralMember*)loginedMember;
                 
@@ -183,12 +194,15 @@ void doTask(FILE* in_fp, FILE* out_fp)
             case 3:
             {
                 FindApplyUI findapplyui;
+                findapplyui.startInterface();
+
                 findapplyui.findMyApply(out_fp, loginedMember, findapply);
                 break;
             }
             case 4:
             {
                 CancelApplyUI cancelapplyui;
+                cancelapplyui.startInterface();
 
                 cancelapplyui.selectApplyToCancel(in_fp, out_fp, loginedMember, cancelapply);
                 break;
@@ -206,10 +220,14 @@ void doTask(FILE* in_fp, FILE* out_fp)
 
                     //(회사회원)이 지원 정보 통계
                     GetApplyCountUI getApplyCountUI;
+                    getApplyCountUI.startInterface();
+
                     getApplyCountUI.getStatisticsRecruitNum(out_fp, getApplyCount, loginedMember);
                 }
                 else {
                     GetGeneralApplyCountUI getgeneralapplycountui;
+                    getgeneralapplycountui.startInterface();
+
                     getgeneralapplycountui.getStatisticApplyNum(out_fp, loginedMember, getgeneralapplycount);
                 }
 

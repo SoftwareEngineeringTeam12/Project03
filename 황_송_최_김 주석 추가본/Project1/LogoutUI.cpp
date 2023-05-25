@@ -2,7 +2,15 @@
 #include "Logout.h"
 #include "LogoutUI.h"
 #define MAX_STRING 32
+/*
+	함수 이름 : LogoutUI::startInterface()
+	기능	  : 메뉴 출력용 함수, 출력 안함
+	전달 인자 :
+	반환값    :
+*/
+void LogoutUI::startInterface() {
 
+}
 /*
 	함수 이름 : LogoutUI::selectLogout()
 	기능	  : 로그아웃 하기

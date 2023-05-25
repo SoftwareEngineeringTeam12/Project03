@@ -11,7 +11,7 @@ class SignUpUI
 {
 public:
 	//SignUpUI() = default;
-	SignUpUI* startInterface();// 인터페이스 시작
+	void startInterface();// 인터페이스 시작
 	int selectKindOfMember(FILE* in_fp, SignUp signUp); // 어떤 종류의 Member인지 선택
 	// Member 생성
 	void createNewMember(FILE* in_fp, FILE* out_fp, int user_type, SignUp signUp, CompanyMember* Cmembers[], int* nextCMember, GeneralMember* Gmembers[], int* nextGMember);

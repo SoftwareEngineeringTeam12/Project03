@@ -6,10 +6,15 @@
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4996)
 
-SignUpUI * SignUpUI::startInterface() {
-	SignUpUI *newSignUpUI = new SignUpUI;
-	return newSignUpUI;
-}// 인터페이스 시작
+/*
+	함수 이름 : SignUpUI::startInterface()
+	기능	  : 메뉴 출력용 함수, 출력 안함
+	전달 인자 : 
+	반환값    : 
+*/
+void SignUpUI::startInterface() {
+
+}
 
 
 /*

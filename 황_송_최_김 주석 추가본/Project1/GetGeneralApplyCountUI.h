@@ -7,5 +7,7 @@
 class GetGeneralApplyCountUI
 {
 public:
+	void startInterface(); // 출력 안함
+
 	void getStatisticApplyNum(FILE* out_fp, Member* loginmember, GetGeneralApplyCount getgeneralapplycount);
 };

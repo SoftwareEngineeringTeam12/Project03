@@ -1,7 +1,15 @@
 #include "CancelApplyUI.h"
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4996)
+/*
+	함수 이름 : CancelApplyUI::startInterface()
+	기능	  : 메뉴 출력용 함수, 출력 안함
+	전달 인자 :
+	반환값    :
+*/
+void CancelApplyUI::startInterface() {
 
+}
 /*
 함수 이름 : FindApplyUI::findMyApply()
 기능 : 로그인 회원이 작성한 지원서 출력

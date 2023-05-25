@@ -8,8 +8,13 @@
 #pragma warning(disable:4996)
 
 using namespace std;
-
-void FindRecruitUI::startInterface(FILE* in_fp, FindRecruit findRecruit) {// 인터페이스 시작
+/*
+	함수 이름 : FindRecruitUI::startInterface()
+	기능	  : 메뉴 출력용 함수, 출력 안함
+	전달 인자 :
+	반환값    :
+*/
+void FindRecruitUI::startInterface() {// 인터페이스 시작
 }
 /*
 	함수 이름 : FindRecruitUI::searchByCName()

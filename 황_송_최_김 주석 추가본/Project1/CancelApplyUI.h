@@ -8,5 +8,7 @@ using namespace std;
 class CancelApplyUI
 {
 public:
+	void startInterface(); // 출력 안함
+
 	void selectApplyToCancel(FILE* in_fp, FILE* out_fp, Member* loginmember, CancelApply cancelapply);
 };

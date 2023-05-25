@@ -9,7 +9,7 @@ class ApplyRecruitUI {
 
 
 public:
-	void startInterface(FILE* in_fp, ApplyRecruit* applyRecruit);
+	void startInterface();
 
 	void applyRecruit(FILE* in_fp, FILE* out_fp, ApplyRecruit applyRecruit, CompanyMember** Cmembers, int nextCMember, Member* loginedMember);
 };

@@ -3,6 +3,16 @@
 #include <string>
 #include "WithdrawUI.h"
 #define MAX_STRING 32
+void startInterface(); // 출력 안함
+/*
+	함수 이름 : WithdrawUI::startInterface()
+	기능	  : 메뉴 출력용 함수, 출력 안함
+	전달 인자 :
+	반환값    :
+*/
+void WithdrawUI::startInterface() {
+
+}
 /*
 	함수 이름 : WithdrawUI::withdrawMember()
 	기능	  : 회원 탈퇴, 컨트롤 클래스의 deletemember 호출, 탈퇴한 아이디 출력

@@ -18,9 +18,10 @@ string SignUp::showNecessaryInfo(int KindOfMember) {
 	if (KindOfMember == 1) {
 		return this->CMemberParams;
 	}
-	else if (KindOfMember == 2) {
+	else {
 		return this->GMemberParams;
 	}
+	
 }
 
 /*
