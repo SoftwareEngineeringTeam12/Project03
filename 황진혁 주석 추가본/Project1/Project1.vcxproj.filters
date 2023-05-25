@@ -13,186 +13,234 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\1.회원가입">
+      <UniqueIdentifier>{fb849675-c44c-4eba-ad3a-1995d6252bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\2.회원탈퇴">
+      <UniqueIdentifier>{39fdadb2-d330-49fb-9052-38db6ff6ed46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\3.로그인/로그아웃">
+      <UniqueIdentifier>{5dec57f6-ecc5-4495-884f-e53a7913dee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\5.채용정보검색/지원">
+      <UniqueIdentifier>{f69a1c08-ecf0-46e6-bd6b-0a873035596b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\4.채용정보등록/조회">
+      <UniqueIdentifier>{097a786b-0bbc-42a6-8687-439fa9548bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\6.지원정보조회/취소">
+      <UniqueIdentifier>{e98a4db4-b8a0-46ab-8016-949366f2f301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\7.지원정보통계">
+      <UniqueIdentifier>{54fe8d6f-7db0-4231-bba4-281021adb0a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Entity">
+      <UniqueIdentifier>{fc588893-6614-4144-ae80-33f0feaeb80c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\1.회원가입">
+      <UniqueIdentifier>{55219a38-079e-4a35-ae8a-2f47759c66b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2.회원탈퇴">
+      <UniqueIdentifier>{bc55f4b2-385f-4f48-a13b-406bb3088002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3.로그인/로그아웃">
+      <UniqueIdentifier>{703ee5b6-933b-4b69-a65b-8cab5ec05c9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4.채용정보등록/조회">
+      <UniqueIdentifier>{a0e52721-6df1-4456-ab21-5a673ca041ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\5.채용정보검색/지원">
+      <UniqueIdentifier>{71d68ee0-5a9f-4fb2-b69b-75937ee31593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\6.지원정보조회/취소">
+      <UniqueIdentifier>{64554a51-78f1-462d-a94b-6e9761580c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\7.지원정보통계">
+      <UniqueIdentifier>{ebc34182-5528-423d-b48a-0d6c271362a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Entity">
+      <UniqueIdentifier>{428d8547-008b-4875-b10f-9e28451b101f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SignUpUI.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Member.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneralMember.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="CompanyMember.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Login.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="LoginUI.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Logout.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="LogoutUI.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\1.회원가입</Filter>
     </ClInclude>
     <ClInclude Include="SignUp.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\1.회원가입</Filter>
     </ClInclude>
     <ClInclude Include="Withdraw.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\2.회원탈퇴</Filter>
     </ClInclude>
     <ClInclude Include="WithdrawUI.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\2.회원탈퇴</Filter>
     </ClInclude>
-    <ClInclude Include="AddRecruit.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Login.h">
+      <Filter>헤더 파일\3.로그인/로그아웃</Filter>
     </ClInclude>
-    <ClInclude Include="AddRecruitUI.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="LoginUI.h">
+      <Filter>헤더 파일\3.로그인/로그아웃</Filter>
     </ClInclude>
-    <ClInclude Include="ShowRecruitList.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Logout.h">
+      <Filter>헤더 파일\3.로그인/로그아웃</Filter>
     </ClInclude>
-    <ClInclude Include="ShowRecruitListUI.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Recruit.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="GetApplyCount.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="GetApplyCountUI.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="LogoutUI.h">
+      <Filter>헤더 파일\3.로그인/로그아웃</Filter>
     </ClInclude>
     <ClInclude Include="FindRecruitUI.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\5.채용정보검색/지원</Filter>
     </ClInclude>
     <ClInclude Include="FindRecruit.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\5.채용정보검색/지원</Filter>
     </ClInclude>
     <ClInclude Include="ApplyRecruitUI.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\5.채용정보검색/지원</Filter>
     </ClInclude>
     <ClInclude Include="ApplyRecruit.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\5.채용정보검색/지원</Filter>
     </ClInclude>
-    <ClInclude Include="Apply.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="AddRecruit.h">
+      <Filter>헤더 파일\4.채용정보등록/조회</Filter>
     </ClInclude>
-    <ClInclude Include="FindApplyUI.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="AddRecruitUI.h">
+      <Filter>헤더 파일\4.채용정보등록/조회</Filter>
     </ClInclude>
     <ClInclude Include="FindApply.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\6.지원정보조회/취소</Filter>
     </ClInclude>
-    <ClInclude Include="CancelApplyUI.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="FindApplyUI.h">
+      <Filter>헤더 파일\6.지원정보조회/취소</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowRecruitList.h">
+      <Filter>헤더 파일\4.채용정보등록/조회</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowRecruitListUI.h">
+      <Filter>헤더 파일\4.채용정보등록/조회</Filter>
+    </ClInclude>
+    <ClInclude Include="Apply.h">
+      <Filter>헤더 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="CompanyMember.h">
+      <Filter>헤더 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralMember.h">
+      <Filter>헤더 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Recruit.h">
+      <Filter>헤더 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Member.h">
+      <Filter>헤더 파일\Entity</Filter>
     </ClInclude>
     <ClInclude Include="CancelApply.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\6.지원정보조회/취소</Filter>
     </ClInclude>
-    <ClInclude Include="GetGeneralApplyCountUI.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="CancelApplyUI.h">
+      <Filter>헤더 파일\6.지원정보조회/취소</Filter>
+    </ClInclude>
+    <ClInclude Include="GetApplyCount.h">
+      <Filter>헤더 파일\7.지원정보통계</Filter>
+    </ClInclude>
+    <ClInclude Include="GetApplyCountUI.h">
+      <Filter>헤더 파일\7.지원정보통계</Filter>
     </ClInclude>
     <ClInclude Include="GetGeneralApplyCount.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\7.지원정보통계</Filter>
+    </ClInclude>
+    <ClInclude Include="GetGeneralApplyCountUI.h">
+      <Filter>헤더 파일\7.지원정보통계</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SignUpUI.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Member.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneralMember.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="CompanyMember.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Login.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="LoginUI.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Logout.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="LogoutUI.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SignUp.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\1.회원가입</Filter>
+    </ClCompile>
+    <ClCompile Include="SignUpUI.cpp">
+      <Filter>소스 파일\1.회원가입</Filter>
     </ClCompile>
     <ClCompile Include="Withdraw.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\2.회원탈퇴</Filter>
     </ClCompile>
     <ClCompile Include="WithdrawUI.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\2.회원탈퇴</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginUI.cpp">
+      <Filter>소스 파일\3.로그인/로그아웃</Filter>
+    </ClCompile>
+    <ClCompile Include="Login.cpp">
+      <Filter>소스 파일\3.로그인/로그아웃</Filter>
+    </ClCompile>
+    <ClCompile Include="Logout.cpp">
+      <Filter>소스 파일\3.로그인/로그아웃</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoutUI.cpp">
+      <Filter>소스 파일\3.로그인/로그아웃</Filter>
     </ClCompile>
     <ClCompile Include="AddRecruit.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\4.채용정보등록/조회</Filter>
     </ClCompile>
     <ClCompile Include="AddRecruitUI.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\4.채용정보등록/조회</Filter>
     </ClCompile>
     <ClCompile Include="ShowRecruitList.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\4.채용정보등록/조회</Filter>
     </ClCompile>
     <ClCompile Include="ShowRecruitListUI.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Recruit.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="GetApplyCount.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="GetApplyCountUI.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="FindRecruitUI.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="FindRecruit.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\4.채용정보등록/조회</Filter>
     </ClCompile>
     <ClCompile Include="ApplyRecruitUI.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\5.채용정보검색/지원</Filter>
     </ClCompile>
     <ClCompile Include="ApplyRecruit.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\5.채용정보검색/지원</Filter>
+    </ClCompile>
+    <ClCompile Include="FindRecruit.cpp">
+      <Filter>소스 파일\5.채용정보검색/지원</Filter>
+    </ClCompile>
+    <ClCompile Include="FindRecruitUI.cpp">
+      <Filter>소스 파일\5.채용정보검색/지원</Filter>
     </ClCompile>
     <ClCompile Include="Apply.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Entity</Filter>
     </ClCompile>
-    <ClCompile Include="FindApplyUI.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="CompanyMember.cpp">
+      <Filter>소스 파일\Entity</Filter>
     </ClCompile>
-    <ClCompile Include="FindApply.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="GeneralMember.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Member.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Recruit.cpp">
+      <Filter>소스 파일\Entity</Filter>
     </ClCompile>
     <ClCompile Include="CancelApply.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="GetGeneralApplyCountUI.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="GetGeneralApplyCount.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\6.지원정보조회/취소</Filter>
     </ClCompile>
     <ClCompile Include="CancelApplyUI.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\6.지원정보조회/취소</Filter>
+    </ClCompile>
+    <ClCompile Include="FindApply.cpp">
+      <Filter>소스 파일\6.지원정보조회/취소</Filter>
+    </ClCompile>
+    <ClCompile Include="FindApplyUI.cpp">
+      <Filter>소스 파일\6.지원정보조회/취소</Filter>
+    </ClCompile>
+    <ClCompile Include="GetApplyCount.cpp">
+      <Filter>소스 파일\7.지원정보통계</Filter>
+    </ClCompile>
+    <ClCompile Include="GetApplyCountUI.cpp">
+      <Filter>소스 파일\7.지원정보통계</Filter>
+    </ClCompile>
+    <ClCompile Include="GetGeneralApplyCount.cpp">
+      <Filter>소스 파일\7.지원정보통계</Filter>
+    </ClCompile>
+    <ClCompile Include="GetGeneralApplyCountUI.cpp">
+      <Filter>소스 파일\7.지원정보통계</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\7.지원정보통계</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
