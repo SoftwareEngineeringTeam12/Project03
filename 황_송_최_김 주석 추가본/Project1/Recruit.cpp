@@ -11,6 +11,13 @@ Recruit::Recruit(string cname, string job, string numberOfApplicants, string dea
 	this->NumberOfApplicants = stoi(numberOfApplicants);
 }
 
+void Recruit::plusApplyCount() {
+	this->ApplyCount++;
+}
+void Recruit::minusApplyCount() {
+	this->ApplyCount--;
+}
+
 /*
 	함수 이름 : Recruit::getRecruit()
 	기능	  : 채용 정보 조회

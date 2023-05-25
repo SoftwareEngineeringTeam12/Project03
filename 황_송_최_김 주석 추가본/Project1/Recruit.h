@@ -20,7 +20,8 @@ public:
 
 	string getRecruit();
 	string getApplyCount();
-
+	void plusApplyCount();
+	void minusApplyCount();
 	string getDetails();
 	string getCName();
 	string getJob();

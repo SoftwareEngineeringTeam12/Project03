@@ -14,9 +14,7 @@ void AddRecruitUI::startInterface() {
 
 }
 
-void AddRecruitUI::registerRecruit() {
 
-}
 
 /*
 	함수 이름 : AddRecruitUI::createNewRecruit()

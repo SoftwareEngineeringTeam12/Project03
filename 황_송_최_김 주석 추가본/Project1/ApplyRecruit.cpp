@@ -25,7 +25,7 @@ string ApplyRecruit::addApply(string BusinessNumber, CompanyMember* Cmembers[], 
 			//companymember에 리크루트정보가져오기 general 에 정보 넘겨주기,newapply생성
 			rec = Cmembers[i]->getMyRecruit();
 			GeneralMember* generalMember = (GeneralMember*)loginedMember;
-			generalMember->AddNewAppply(rec->getCName(), BusinessNumber, rec->getJob(), rec->getNumberOfApplicants(), rec->getDeadline());
+			generalMember->AddNewAppply(rec->getCName(), BusinessNumber, rec->getJob(), rec->getNumberOfApplicants(), rec->getDeadline(), rec);
 			result += Cmembers[i]->getCName() +" "  +Cmembers[i]->getBusinessNubmer() + " " + rec->getJob() + "\n";
 			
 			break;

@@ -15,7 +15,7 @@ Member* LoginUI::selectLogin(FILE* in_fp, FILE* out_fp, Login login, CompanyMemb
 	// 컨트롤의 함수 호출하여 로그인 한 멤버 포인터를 받기
 	Member* result = login.loginMember(id, pw, Cmembers, nextCMember, Gmembers, nextGMember);
 	// 출력
-	fprintf(out_fp, "2. 1. 로그인\n");
+	fprintf(out_fp, "2.1. 로그인\n");
 	fprintf(out_fp, "> %s %s\n\n", id, pw);
 	// 로그인 한 멤버의 포인터 반환
 	return result;

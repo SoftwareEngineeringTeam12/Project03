@@ -5,9 +5,7 @@ using namespace std;
 #include <iostream>
 AddRecruit::AddRecruit() {}
 
-void AddRecruit::showRegisterRecruit() {
 
-}
 
 /*
 	함수 이름 : AddRecruit::AddNewRecruit()

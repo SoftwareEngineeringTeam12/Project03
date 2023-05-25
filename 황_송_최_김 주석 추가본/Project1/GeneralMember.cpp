@@ -12,9 +12,10 @@
 */
 
 
-void GeneralMember::AddNewAppply(string cname, string businessNumber, string job, int numberOfApplicants, string deadline) {
-	Apply* newApply = new Apply(cname, businessNumber, job, deadline, numberOfApplicants);
+void GeneralMember::AddNewAppply(string cname, string businessNumber, string job, int numberOfApplicants, string deadline, Recruit * rec) {
+	Apply* newApply = new Apply(cname, businessNumber, job, deadline, numberOfApplicants, rec);
 	this->OwnApply[this->OwnApplyNum++] = newApply;
+	rec->plusApplyCount();
 
 }
 
@@ -82,6 +83,7 @@ string GeneralMember::deleteApply(string del)
 			temp += OwnApply[i]->getApplyGname();
 			temp += " ";
 			temp += OwnApply[i]->getApplyJob();
+
 			delete OwnApply[i];
 			OwnApply[i] = nullptr;
 			break;

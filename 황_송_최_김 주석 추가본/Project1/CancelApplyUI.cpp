@@ -19,6 +19,6 @@ void CancelApplyUI::selectApplyToCancel(FILE* in_fp, FILE* out_fp, Member* login
 	string result = cancelapply.cancelexistingApply(generalmember, del);
 	char stl[MAX_STRING];
 	strcpy_s(stl, result.c_str());
-	fprintf(out_fp, "4. 4. 지원 정보 취소\n");       
+	fprintf(out_fp, "4.4. 지원 정보 취소\n");       
 	fprintf(out_fp, "> %s\n\n", stl);//삭제한 회사정보 출력
 }

@@ -1,4 +1,5 @@
 #pragma once
+#include "Recruit.h"
 #include <string>
 #include "Member.h"
 #include "Apply.h"
@@ -11,12 +12,13 @@ private:
 	string RegisterNumber;
 	Apply* OwnApply[10];
 	int OwnApplyNum = 0;
+	
 public:
 	// 생성자
 	GeneralMember(string _ID, string _PW, string _GName, string _RegisterNumber)
 		: Member(_ID, _PW, 2), GName(_GName), RegisterNumber(_RegisterNumber)
 	{}
-	void AddNewAppply(string cname, string BusinessNumber, string job, int numberOfApplicants, string deadline);
+	void AddNewAppply(string cname, string BusinessNumber, string job, int numberOfApplicants, string deadline, Recruit * rec);
 	string listApply(); //지원한 정보 출력
 	string deleteApply(string del); //지원정보 삭제
 	string getApplyNum(); //지원 통계기능 

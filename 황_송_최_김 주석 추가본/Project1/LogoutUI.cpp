@@ -16,7 +16,7 @@ void LogoutUI::selectLogout(FILE* out_fp, Member* LoginedMember, Logout logout) 
 	char stl[MAX_STRING];
 	strcpy_s(stl, result.c_str());
 	// Ãâ·Â
-	fprintf(out_fp, "2. 2. ·Î±×¾Æ¿ô\n");
+	fprintf(out_fp, "2.2. ·Î±×¾Æ¿ô\n");
 	fprintf(out_fp, "> %s\n\n", stl);
 
 }

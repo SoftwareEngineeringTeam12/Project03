@@ -22,8 +22,6 @@ public:
 	void createRecruit(string Job, string NumberOfApplicants, string Deadline);
 	string listRecruit();
 
-	string findRecruitByCName(char* CName);
-
 	string getMyRecruitDetails();
 
 	string getMyRecruitCName();

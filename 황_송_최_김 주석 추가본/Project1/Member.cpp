@@ -21,7 +21,7 @@ int Member::getUsertype() {
 	반환값    : 결과 Bool True False
 */
 bool Member::loginMember(string _ID, string _PW) {
-	if (getID() == _ID && getPW() == _PW) {
+	if (this->ID == _ID && this->PW == _PW) {
 		return true;
 	}
 	else {
@@ -35,5 +35,5 @@ bool Member::loginMember(string _ID, string _PW) {
 	반환값    : ID
 */
 string Member::logoutMember() {
-	return this->getID();
+	return this->ID;
 }

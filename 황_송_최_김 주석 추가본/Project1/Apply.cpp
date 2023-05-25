@@ -1,13 +1,14 @@
 #pragma once
 #include "Apply.h"
 
-Apply::Apply(string _Cname, string _BusinessNumber, string _Job, string _Deadline, int _NumberofApplicants){
+Apply::Apply(string _Cname, string _BusinessNumber, string _Job, string _Deadline, int _NumberofApplicants, Recruit* rec){
 
 	this->Cname = _Cname;
 	this->BusinessNumber = _BusinessNumber;
 	this->Deadline = _Deadline;
 	this->NumberOfApplicants = _NumberofApplicants;
 	this->Job = _Job;
+	this->OwnRecruit = rec;
 }
 
 
@@ -38,5 +39,5 @@ string Apply::getApplyDeadline()
 }
 
 Apply::~Apply() {
-	
+	this->OwnRecruit->minusApplyCount();
 }

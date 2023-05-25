@@ -16,7 +16,7 @@ void WithdrawUI::withdrawMember(FILE* out_fp, Member* LoginedMember, Withdraw wi
 	char stl[MAX_STRING];
 	strcpy_s(stl, result.c_str());
 	// ÆÄÀÏ¿¡ Ãâ·Â
-	fprintf(out_fp, "1. 2. È¸¿øÅ»Åğ\n");
+	fprintf(out_fp, "1.2. È¸¿øÅ»Åğ\n");
 	fprintf(out_fp, "> %s\n\n", stl);
 
 }

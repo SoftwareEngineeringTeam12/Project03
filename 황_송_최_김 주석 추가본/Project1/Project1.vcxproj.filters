@@ -240,7 +240,7 @@
       <Filter>소스 파일\7.지원정보통계</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>소스 파일\7.지원정보통계</Filter>
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
